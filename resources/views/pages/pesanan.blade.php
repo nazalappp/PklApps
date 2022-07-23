@@ -7,8 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h2><b>Menu :</b></h2>
-    -Ayam Goreng
+    <fieldset>
+        <legend><h2><b>Menu :</b></h2></legend>
+        -Ayam Goreng
     <br>
     -Lobster
     <br>
@@ -41,6 +42,29 @@
             echo "? mohon maaf pesanan anda tidak ada.";
         }
 
+        echo "<hr>";
+
+        echo "<br>Halo pesanan anda : $b";
+        if( $b == "ayam goreng"){
+            echo "<br> hbrga $b : Rp.150000";
+        }
+        elseif( $b == "lobster"){
+            echo "<br>harga $b : Rp.20000";
+        }
+        elseif( $b == "pizza"){
+            echo "<br>harga $b : Rp.50000";
+        }
+        elseif( $b == "tiramisu"){
+            echo "<br>harga $b : Rp.30000";
+        }
+        elseif( $b == "pasta"){
+            echo "<br>harga $b : Rp.25000";
+        }
+        else{
+            echo "? mohon maaf pesanan anda tidak ada.";
+        }
     ?>
+    </fieldset>
+    
 </body>
 </html>
